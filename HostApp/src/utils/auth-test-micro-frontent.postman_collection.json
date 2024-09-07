@@ -1,0 +1,118 @@
+{
+	"info": {
+		"_postman_id": "2a31a20b-6790-4a43-ba06-0357a9e5fdef",
+		"name": "auth-test-micro-frontent",
+		"schema": "https://schema.getpostman.com/json/collection/v2.1.0/collection.json",
+		"_exporter_id": "3017761"
+	},
+	"item": [
+		{
+			"name": "login",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/login",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"login"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://c340c21d-cbd4-4d1d-8eb5-6a5575bdf0fe.mock.pstmn.io/login",
+							"protocol": "https",
+							"host": [
+								"c340c21d-cbd4-4d1d-8eb5-6a5575bdf0fe",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"login"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\n  \"status\": \"success\",\n  \"message\": \"Authentication successful\",\n  \"token\": \"eyJhbGciOiJIUzI1NiIsInR5cCI6IkpXVCJ9.e30.s5tIuepJvx7vD3fxuvzYXQ\",\n  \"expires_in\": 3600\n}\n"
+				}
+			]
+		},
+		{
+			"name": "save",
+			"request": {
+				"method": "POST",
+				"header": [],
+				"body": {
+					"mode": "raw",
+					"raw": ""
+				},
+				"url": {
+					"raw": "{{url}}/save",
+					"host": [
+						"{{url}}"
+					],
+					"path": [
+						"save"
+					]
+				}
+			},
+			"response": [
+				{
+					"name": "Default",
+					"originalRequest": {
+						"method": "POST",
+						"header": [],
+						"body": {
+							"mode": "raw",
+							"raw": ""
+						},
+						"url": {
+							"raw": "https://c340c21d-cbd4-4d1d-8eb5-6a5575bdf0fe.mock.pstmn.io/save",
+							"protocol": "https",
+							"host": [
+								"c340c21d-cbd4-4d1d-8eb5-6a5575bdf0fe",
+								"mock",
+								"pstmn",
+								"io"
+							],
+							"path": [
+								"save"
+							]
+						}
+					},
+					"code": 200,
+					"_postman_previewlanguage": null,
+					"header": null,
+					"cookie": [],
+					"body": "{\"status\": \"success\"}"
+				}
+			]
+		}
+	],
+	"variable": [
+		{
+			"key": "url",
+			"value": "https://c340c21d-cbd4-4d1d-8eb5-6a5575bdf0fe.mock.pstmn.io"
+		}
+	]
+}
